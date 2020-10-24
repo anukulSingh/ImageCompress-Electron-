@@ -1,0 +1,14 @@
+{
+  "name": "image_compressor",
+  "version": "1.0.0",
+  "description": "Desktop app for image optimization",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Anukul",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^10.1.5"
+  }
+}
