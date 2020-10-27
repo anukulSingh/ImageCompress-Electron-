@@ -4,11 +4,13 @@
   "description": "Desktop app for image optimization",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "dev": "nodemon --exec electron ."
   },
   "author": "Anukul",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^10.1.5"
+    "electron": "^10.1.5",
+    "nodemon": "^2.0.6"
   }
 }
