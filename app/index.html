@@ -54,14 +54,14 @@
         const img = document.getElementById('img')
 
         
-        document.getElementById('output-path').textContent = path.join(os.homedir(), 'ImageCompress')
+        document.getElementById('output-path').textContent = path.join(os.homedir(), 'imagecompress')
       
         form.addEventListener('submit', (e) => {
             e.preventDefault()
 
             const imgPath = img.files[0].path
             const quality = slider.value 
-            console.log(imgPath, quality);
+            
 
             ipcRenderer.send('image:minimize', {
                 imgPath,
@@ -73,11 +73,11 @@
     
         
 
-        // ipcRenderer.on('image:done', () => {
-        //     M.toast({
-        //         html: `Image resized to ${slider.value} % quality`
-        //     })
-        // })
+        ipcRenderer.on('image:done', () => {
+            M.toast({
+                html: `Image resized to ${slider.value} % quality`
+            })
+        })
     </script>
 </body>
 </html>
