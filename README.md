@@ -1,6 +1,6 @@
-### Image compressor desktop application with Electron
+## Image compressor desktop application with Electron
 
-## Useful Resources:
+### Useful Resources:
 
 - Download Electron - https://www.electronjs.org/docs/tutorial/installation
 
